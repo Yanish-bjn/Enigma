@@ -69,17 +69,30 @@ class EnigmaMachine:
             char = chr((self.rotors[i].index(char) - self.rotor_positions[i] + 26) % 26 + ord('A'))
 
         return char
+    
+
+    def decrypt_char(self, char):
+        rotor = self.rotors[0]
+        position = rotor.index(char)
+        decrypted_position = (position - self.rotor_positions[0]) % len(rotor)
+        return rotor[decrypted_position]
+
+    def reset_rotors(self):
+        self.rotor_positions = [0, 0, 0]
 
     def encrypt_message(self, message):
+        self.reset_rotors()
         encrypted_message = ""
         for char in message:
             if char.isalpha():
+                self.rotate_rotors()
                 encrypted_message += self.encrypt_char(char.upper())
             else:
                 encrypted_message += char
         return encrypted_message
     
     def decrypt_message(self, message):
+        self.reset_rotors()
         decrypted_message = ""
         for char in message:
             if char.isalpha():
@@ -88,7 +101,6 @@ class EnigmaMachine:
             else:
                 decrypted_message += char
         return decrypted_message
-
 
 def main():
     root = tk.Tk()
