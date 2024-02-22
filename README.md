@@ -2,16 +2,21 @@
 ## Machine électromécanique portative servant au chiffrement 
 
 - Dans le cadre du cours blockchain, nous devons mettre en place (langage au choix), d'une machine enigma.
-- réalisé par : Yanish BHUJUN & Yiyi LYN
+- Le projet a été réalisé avec le langage python sur vscode.
+- réalisé par : Yanish BHUJUN & Yiyi LYN.
 
 ## Clone
 
 - git clone https://github.com/Yanish-bjn/Enigma
 
+## Module tkinter
+
+- pip install tk
+
 ## Running
 
 - Cd Enigma
-- python process.py or python3 process.py
+- python Main.py or python3 Main.py
 
 ## Require
-- python 2.7 for process.py
+- python 2.7 minimum
