@@ -11,11 +11,11 @@
 
 ## Module tkinter
 
+- cd Enigma
 - pip install tk
 
 ## Running
 
-- Cd Enigma
 - python Main.py or python3 Main.py
 
 ## Require
