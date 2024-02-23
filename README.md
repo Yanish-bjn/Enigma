@@ -1,9 +1,9 @@
 # ENIGMA
 ## Machine électromécanique portative servant au chiffrement 
 
-- Dans le cadre du cours blockchain, nous devons mettre en place (langage au choix), d'une machine enigma.
+- Dans le cadre du cours blockchain, nous devons mettre en place (langage au choix), une machine enigma.
 - Le projet a été réalisé avec le langage python sur vscode.
-- réalisé par : Yanish BHUJUN & Yiyi LYN.
+- réalisé par : Yanish BHUJUN & Yiyi LIN.
 
 ## Clone
 
